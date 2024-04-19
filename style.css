@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+}
+
+:root {
+
+    --text-color: #333333;
+}
+
+.main-contaner {
+
+    max-width: 1080px;
+    margin: 0 auto;
+
+
+
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 0.5rem;
+    align-items: center;
+
+
+}
+
+#logo-image {
+    width: 50px;
+
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+}
+
+#text-name {
+    color: rgb(108, 105, 105);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 0.3rem;
+
+
+
+
+}
+
+.nav a {
+    color: rgb(108, 105, 105);
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+.nav a:hover {
+    color: rgb(84, 196, 230);
+    ;
+}
+
+@media screen and (max-width:720px) {
+    .nav a {
+        display: none;
+
+    }
+
+}
+
+.button {
+    color: #FFF;
+
+    background-color: rgb(84, 196, 230);
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    box-shadow: 1px 1px 5px rgb(104, 106, 106);
+}
+
+.button:hover {
+    background-color: rgb(99, 180, 204);
+
+}
+
+@media screen and (max-width:720px) {
+    .button {
+        display: none;
+
+    }
+
+}
+
+#menu {
+    padding-right: 1rem;
+    width: 3.5rem;
+    display: none;
+}
+
+@media screen and (max-width:720px) {
+    #menu {
+        display: block;
+    }
+
+}
+
+/* header section end with media */
+
+
+/* hero secton start */
+.hero-section {
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+/* @media screen and (max-width:1100px) {
+    .hero-section{
+        display: flex;
+        flex-direction: row;
+    }
+    
+} */
+#hero-image {
+    width: 450px;
+    margin-top: 3rem;
+}
+
+.text-section {
+    animation: slidFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slidFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 7rem;
+    color: rgb(92, 88, 88);
+
+
+
+}
+
+.text-section p {
+    font-size: 0.8rem;
+    width: 60%;
+    margin-top: 0.6rem;
+    color: rgb(108, 105, 105);
+}
+
+
+.start-button {
+    color: #fff;
+    margin-right: 1rem;
+    background-color: rgb(84, 196, 230);
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 1px 1px 5px rgb(104, 106, 106);
+
+}
+
+.start-button:hover {
+    background-color: rgb(99, 180, 204);
+
+}
+
+.tour-button {
+    color: #fff;
+
+    background-color: rgb(84, 196, 230);
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 1px 1px 5px rgb(104, 106, 106);
+
+}
+
+.tour-button:hover {
+    background-color: rgb(99, 180, 204);
+
+}
+
+.button-section {
+    margin-top: 2.5rem;
+
+}
+
+/* hero secton end */
+
+/* company section start  */
+
+#company-heading {
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 58%;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    animation: slidFromLeft 1s ease forwards;
+    opacity: 0;
+    color: rgb(92, 88, 88);
+
+}
+
+.company {
+    max-width: 1080px;
+    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+    height: 5rem;
+    background-color: #d7d7d7;
+    width: 40%;
+    border-radius: 10px;
+    animation: slidFromLeft 1s ease forwards;
+    opacity: 0;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
+}
+
+@keyframes slidFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+.company-logo {
+    width: 1.2rem;
+}
+
+.company-a {
+    display: flex;
+    align-items: center;
+}
+
+.company-b {
+    display: flex;
+    align-items: center;
+}
+
+.company-c {
+    display: flex;
+    align-items: center;
+}
+
+.company-d {
+    display: flex;
+    align-items: center;
+
+}
+
+/* company section end  */
+
+/* grid card start  */
+.main-card {
+    /* max-width: 1080px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d7d7d7;
+
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+}
+
+#card-title {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    color: rgb(92, 88, 88);
+
+}
+
+#card-description {
+    padding: 1rem;
+    width: 70%;
+    font-size: 1rem;
+    color: rgb(108, 105, 105);
+
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  
+
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 15rem;
+    height: 12rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
+}
+
+.card:nth-child(1) {
+    background-color: rgb(121, 189, 167);
+}
+
+.card:nth-child(2) {
+    background-color: rgb(164, 238, 161);
+}
+
+.card:nth-child(3) {
+    background-color: rgb(208, 202, 135);
+}
+
+.card:nth-child(4) {
+    background-color: rgb(134, 119, 194);
+}
+
+.card:nth-child(5) {
+    background-color: rgb(208, 168, 127);
+}
+
+.card:nth-child(6) {
+    background-color: rgb(207, 135, 179);
+}
+
+.card-image {
+    width: 2rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.grid-title {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+.grid-desc {
+    font-size: 0.8rem;
+    width: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* grid card end  */
+
+/* Employee card section start */
+
+.employee-main {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.employee-titel h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: rgb(108, 105, 105);
+}
+
+.employee-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+
+
+}
+
+.emp-card {
+    /* border: 1px solid black; */
+    width: 20rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 1px 1px 10px #d7d7d7; */
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    height: 13rem;
+    transition-duration:0.5s;
+    
+
+
+}
+.emp-card:hover{
+    background-color:rgb(233, 233, 233);
+    
+}
+
+.emp-msg {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: rgb(108, 105, 105);
+}
+
+.emp-image {
+    width: 4rem;
+    border-radius: 50%;
+    height: 4rem;
+}
+
+.emp-name h4 {
+    color: rgb(21, 21, 167);
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Employee card section end */
+
+/* slider section start   */
+.slidersection {
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem;
+    justify-content: center;
+    max-width: 1080px;
+  
+}
+
+.slidersection h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    color: rgb(108, 105, 105);
+}
+
+.sliderimg {
+    background-image: url(images/team1.jpg);
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    /* overflow: hidden; */
+    background-size: cover;
+    margin-top: 4rem;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    animation: slider 30s 2 alternate;
+
+
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(images/team7.jpg);
+    }
+
+    20% {
+        background-image: url(images/team2.jpg);
+    }
+
+    40% {
+        background-image: url(images/team3.jpg);
+    }
+
+    60% {
+        background-image: url(images/team4.jpg);
+    }
+
+    80% {
+        background-image: url(images/team5.jpg);
+    }
+
+    100% {
+        background-image: url(images/team6.jpg);
+    }
+
+}
+
+/* slider section end  */
+
+/* news letter section start  */
+
+.news-letter{
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 27%;
+    align-items: center;
+    /* background-color: #d7d7d7; */
+    padding: 1rem;
+    border-radius: 1.2rem;
+    height: 15rem;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+   
+
+}
+.news-letteimg{
+    width: 3rem;
+
+}
+.news-heading,h3{
+    color: rgb(108, 105, 105);
+    margin-bottom: 0.5rem;
+    
+
+}
+.input-text{
+    width: 17rem;
+    height: 2rem;
+    color: rgb(108, 105, 105);
+
+ 
+}
+.input-email{
+    width: 34.5rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    
+}
+.submit-btn{
+    color: #FFF;
+    background-color: rgb(84, 196, 230);
+    width: 5rem;
+    padding: 0.6rem;
+    
+    box-shadow: 1px 1px 5px rgb(104, 106, 106);
+   margin: 0.5rem;
+    margin-left:3rem ;
+    border:none;
+}
+/* news letter section end  */
+
+/* footer section start */
+.footer-main{
+    background-color:#d7d7d7;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content:space-around;
+    margin-top: 1rem;
+    padding: 2rem;
+
+}
+.footer-logo-name{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+   
+}
+.footer-logo{
+    width: 3rem;
+}
+.footer-nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    
+}
+.footer-nav ul{
+    list-style: none;
+    
+  
+
+}
+.footer-nav,ul,a{
+    color: rgb(108, 105, 105);
+}
+
+.contact-icons{
+    width: 1.4rem;
+}
+
+.contact-section{
+    display:flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    gap: 0.6rem;
+    color: rgb(108, 105, 105);
+    
+}
+.social-link{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.social-icon{
+    width: 1.5rem
+}
+.aboutcompany{
+    color: rgb(108, 105, 105);
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer section end */
